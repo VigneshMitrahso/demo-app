@@ -1,10 +1,8 @@
 import { MeetingProvider,useMeeting, useParticipant } from "@videosdk.live/react-sdk";
-// import { MeetingAppProvider } from "./MeetingAppContextDef";
-// import { MeetingContainer } from "./azure-video/meeting/MeetingContainer.jsx";
 import {useEffect, useState} from "react";
 import { MeetingAppProvider } from "./components/azure-video/MeetingAppContextDef";
 import { MeetingContainer } from "./components/azure-video/meeting/MeetingContainer";
-// import { AblyProvider, ChannelProvider, useChannel, useConnectionStateListener } from 'ably/react';
+import { AblyProvider, ChannelProvider, useChannel, useConnectionStateListener } from 'ably/react';
 
 export function VideoCallScreen({ roomId,apiresponse }) {
   const [token, setToken] = useState("");
@@ -21,17 +19,17 @@ export function VideoCallScreen({ roomId,apiresponse }) {
 
   const {data } = apiresponse || {};
 
-  // useConnectionStateListener("connected", () => {
-  //   console.log("Connected to Ably!");
-  // });
+  useConnectionStateListener("connected", () => {
+    console.log("Connected to Ably!");
+  });
 
-    // const { channel } = useChannel("get-started", "first", (message) => {
-    //   // if(message.data === "Start"){
-    //   //   setScreenSharing(true);
-    //   // }else if(message.data === "Stop"){
-    //   //   setScreenSharing(false);
-    //   // }
-    // });
+    const { channel } = useChannel("get-started", "first", (message) => {
+      // if(message.data === "Start"){
+      //   setScreenSharing(true);
+      // }else if(message.data === "Stop"){
+      //   setScreenSharing(false);
+      // }
+    });
 
 
 
@@ -100,7 +98,7 @@ export function VideoCallScreen({ roomId,apiresponse }) {
               }}
               className="report"
               onClick={() => {
-                // channel.publish('first', 'Add_corner');
+                channel.publish('first', 'Add_corner');
               }}
             >
               Add Corner
@@ -120,7 +118,7 @@ export function VideoCallScreen({ roomId,apiresponse }) {
               }}
               className="report"
               onClick={() => {
-                // channel.publish('first', 'undo');
+                channel.publish('first', 'undo');
               }}
             >
               Undo
@@ -140,7 +138,7 @@ export function VideoCallScreen({ roomId,apiresponse }) {
               }}
               className="report"
               onClick={() => {
-                // channel.publish('first', 'add_room');
+                channel.publish('first', 'add_room');
               }}
             >
               Add Room
@@ -160,7 +158,7 @@ export function VideoCallScreen({ roomId,apiresponse }) {
               }}
               className="report"
               onClick={() => {
-                // channel.publish('first', 'finish_measurement');
+                channel.publish('first', 'finish_measurement');
               }}
             >
               Finish measurement

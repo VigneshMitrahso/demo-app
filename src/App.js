@@ -10,8 +10,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import * as Ably from "ably";
-// import { AblyProvider, ChannelProvider } from "ably/react";
+import * as Ably from "ably";
+import { AblyProvider, ChannelProvider } from "ably/react";
 import { MeetingAppProvider } from "./components/azure-video/MeetingAppContextDef";
 import { VideoCallScreen } from "./VideoCallScreen";
 
@@ -107,9 +107,9 @@ function HomeScreen({ onEnterRoom }) {
 }
 
 const App = () => {
-  // const client = new Ably.Realtime({
-  //   key: "MnLrtg.SgE_JQ:gdNMGCjfgbEQULQsra39cLc1E2YxjfWi_OH4YisD5is",
-  // });
+  const client = new Ably.Realtime({
+    key: "MnLrtg.SgE_JQ:gdNMGCjfgbEQULQsra39cLc1E2YxjfWi_OH4YisD5is",
+  });
   const [route, setRoute] = useState(() => getRouteFromPath(window.location.pathname))
   const [roomId, setRoomId] = useState('')
   const [apiresponse, setApiResponse] = useState(null);
@@ -148,8 +148,8 @@ const App = () => {
   return (
     <Fragment>
     <MeetingAppProvider>
-    {/* <AblyProvider client={client}> */}
-      {/* <ChannelProvider channelName="get-started"> */}
+    <AblyProvider client={client}>
+      <ChannelProvider channelName="get-started">
       <div className="app-shell">
       <Header />
       {route === 'videocall' ? (
@@ -158,8 +158,8 @@ const App = () => {
         <HomeScreen onEnterRoom={navigateToVideoCall} />
       )}
     </div>    
-      {/* </ChannelProvider> */}
-    {/* </AblyProvider> */}
+      </ChannelProvider>
+    </AblyProvider>
     </MeetingAppProvider>
 
   </Fragment>

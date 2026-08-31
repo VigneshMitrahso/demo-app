@@ -44,10 +44,13 @@ export function MeetingContainer({
         console.error("Camera must be on to capture an image");
       }
     }
-    useEffect(async()=>{
+    useEffect(()=>{
       console.log("isCapture",isCapture);
-      let imageData = await imageCapture()
-      imageCallback(imageData);
+      const captureAsync = async () => {
+        let imageData = await imageCapture()
+        imageCallback(imageData);
+      };
+      captureAsync();
     },[isCapture])
 
     useEffect(() => {
@@ -67,7 +70,6 @@ export function MeetingContainer({
       }
     }
   
-    return null;
   }, [participantsData]);
 
   const ParticipantMicStream = memo(({ participantId }) => {
@@ -88,6 +90,7 @@ export function MeetingContainer({
 
       }
     }, [micStream, participantId]); 
+    
     return null;
   }, [participantsData]);
 
@@ -134,12 +137,18 @@ export function MeetingContainer({
     containerRef.current?.offsetWidth &&
       setContainerWidth(containerRef.current.offsetWidth);
 
-    window.addEventListener("resize", ({ target }) => {
+    const handleResize = () => {
       containerRef.current?.offsetHeight &&
         setContainerHeight(containerRef.current.offsetHeight);
       containerRef.current?.offsetWidth &&
         setContainerWidth(containerRef.current.offsetWidth);
-    });
+    };
+
+    window.addEventListener("resize", handleResize);
+    
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, [containerRef]);
 
   const { participantRaisedHand } = useRaisedHandParticipants();
