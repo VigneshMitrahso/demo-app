@@ -14,7 +14,7 @@ module.exports = {
     configure: (webpackConfig) => {
       webpackConfig.resolve.alias = {
         ...webpackConfig.resolve.alias,
-        "react/jsx-runtime": require.resolve("react/jsx-runtime.js"),
+        // "react/jsx-runtime": require.resolve("react/jsx-runtime.js"),
         "console-browserify": path.resolve(
           __dirname,
           "src/libs/console-browserify",
