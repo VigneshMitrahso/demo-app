@@ -1,0 +1,264 @@
+{
+  "data": {
+    "adjacentLandDetails": [
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.107664896252192
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41809416000919
+          }
+        },
+        "direction": "Southwest",
+        "surveyDetails": "Survey Number - 389",
+        "surveyLabel": "1"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.108190390077965
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41813968535037
+          }
+        },
+        "direction": "North",
+        "surveyDetails": "Survey Number - 390",
+        "surveyLabel": "2"
+      }
+    ],
+    "amenities": {
+      "nearestHighway": {
+        "distance": 5100.28,
+        "label": "D5",
+        "name": "State Highway 78"
+      },
+      "nearestHospital": {
+        "distance": 8832.18,
+        "label": "D3",
+        "name": "Hospital"
+      },
+      "nearestRoadRail": {
+        "distance": 29915.34,
+        "label": "D4",
+        "name": "Pachhapur"
+      },
+      "nearestSchool": {
+        "distance": 2329.65,
+        "label": "D1",
+        "name": "Govt marathi high school kot"
+      },
+      "nearestUniversity": {
+        "distance": 7929.37,
+        "label": "D2",
+        "name": "Sant Gajanan Maharaj Rural Pharmacy College"
+      }
+    },
+    "metadata": {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              [74.417962338, 16.107907963],
+              [74.41843733, 16.107936437],
+              [74.418450338, 16.107696791],
+              [74.417977894, 16.10761678],
+              [74.417962338, 16.107907963]
+            ]
+          ]
+        ],
+        "type": "MultiPolygon"
+      },
+      "propEyeId": 14691880182021,
+      "reportDate": "2023-01-19"
+    },
+    "nearestOffices": [
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 15.271944
+          },
+          "lon": {
+            "label": "E",
+            "value": 73.958333
+          }
+        },
+        "distance": 109339.26,
+        "label": "C1",
+        "name": "MARGAO BRANCH"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 15.869999
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.505306
+          }
+        },
+        "distance": 29174,
+        "label": "C2",
+        "name": "BELGAUM BRANCH"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 15.4955
+          },
+          "lon": {
+            "label": "E",
+            "value": 73.8229
+          }
+        },
+        "distance": 96970.56,
+        "label": "C3",
+        "name": "PANJIM BRANCH"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.708
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.2528
+          }
+        },
+        "distance": 72024.54,
+        "label": "C4",
+        "name": "KOLHAPUR BRANCH"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.8541
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.5796
+          }
+        },
+        "distance": 88460.57,
+        "label": "C5",
+        "name": "SANGLI BRANCH"
+      }
+    ],
+    "propertyDetails": {
+      "district": "Kolhapur",
+      "propertyAddress": "4C59+47 Lingnoor K.nesari, Maharashtra, India, Gadhinglaj, Teginhal",
+      "state": "maharashtra"
+    },
+    "regionalParameters": {
+      "nearestWaterBody": "1.9",
+      "soilType": "Shallow Black Soils (with medium and deep Black Soils as  inclusion)",
+      "temperature": {
+        "max": 36.9,
+        "min": 14.1
+      }
+    },
+    "surveyNumberDetails": [
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.108190390077965
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41813968535037
+          }
+        },
+        "deviation": 49,
+        "geometry": "{\"type\":\"MultiPolygon\",\"coordinates\":[[[[74.419064676,16.108149467],[74.418985926,16.108360537],[74.418881409,16.108723821],[74.418240073,16.108496506],[74.417869328,16.108357082],[74.417639841,16.108398429],[74.417244458,16.108169769],[74.417278537,16.107932924],[74.417318525,16.107690497],[74.419064676,16.108149467]]]]}",
+        "inclusionPercentage": 0.58,
+        "surveyArea": 13891.48,
+        "surveyDetails": {
+          "Survey Number": "390"
+        },
+        "surveyLabel": "1"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.107664896252192
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41809416000919
+          }
+        },
+        "deviation": 19,
+        "geometry": "{\"type\":\"MultiPolygon\",\"coordinates\":[[[[74.419143329,16.107971015],[74.419064676,16.108149467],[74.417318525,16.107690497],[74.417361088,16.107155298],[74.417893697,16.107293649],[74.419143329,16.107971015]]]]}",
+        "inclusionPercentage": 15.86,
+        "surveyArea": 10904.81,
+        "surveyDetails": {
+          "Survey Number": "389"
+        },
+        "surveyLabel": "2"
+      }
+    ],
+    "urbanizationLevel": {
+      "villagePopulation": 564
+    },
+    "waterConditions": {
+      "state": [
+        {
+          "district": [
+            {
+              "name": "Kolhapur",
+              "subDistrict": [
+                {
+                  "groundWater": {
+                    "average": 902,
+                    "yearlyData": {
+                      "2012": 860,
+                      "2013": 910,
+                      "2014": 893,
+                      "2015": 853,
+                      "2016": 887,
+                      "2017": 894,
+                      "2018": 911,
+                      "2019": 922,
+                      "2020": 945,
+                      "2021": 947
+                    }
+                  },
+                  "name": "Gadhinglaj",
+                  "rainfall": {
+                    "average": 1116,
+                    "yearlyData": {
+                      "2012": 999,
+                      "2013": 1144,
+                      "2014": 1317,
+                      "2015": 787,
+                      "2016": 818,
+                      "2017": 937,
+                      "2018": 1034,
+                      "2019": 1711,
+                      "2020": 1167,
+                      "2021": 1251
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "Maharashtra"
+        }
+      ]
+    }
+  },
+  "status": true
+}

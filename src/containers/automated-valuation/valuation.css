@@ -1,0 +1,12 @@
+.automated-sections {
+  height: calc(100vh - 106px);
+  width: 55%;
+  margin: 0 auto;
+  margin-top: 106px !important;
+}
+.valuation-map-sections {
+  position: relative;
+  width: 100%;
+  border: 1px solid #ee7d36;
+  flex-basis: 70%;
+}

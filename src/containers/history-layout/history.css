@@ -1,0 +1,34 @@
+.history-searched {
+  margin-bottom: 10px;
+}
+
+.history-searched h6 {
+  color: #053c6d;
+}
+
+.history-sec {
+  padding: 0px 20px;
+}
+
+.histroy-show {
+  display: flex;
+  /* align-content: center;
+  align-self: center;
+  align-items: center; */
+  justify-content: space-between;
+}
+
+.histroy-view {
+  width: 45%;
+}
+
+.history-searched-iten {
+  padding: 10px;
+  display: flex;
+  /* justify-content: space-around; */
+}
+
+.history-searched-iten label {
+  margin-right: 10px !important;
+  text-align: right;
+}

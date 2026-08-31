@@ -1,0 +1,7 @@
+.ppi-chart-section {
+  flex-basis: 70%;
+}
+.ppi-chart-section .chartjs-render-monitor {
+  height: 100% !important;
+  width: 100% !important;
+}

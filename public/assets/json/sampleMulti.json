@@ -1,0 +1,286 @@
+{
+  "data": {
+    "adjacentLandDetails": [
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.1098370755399
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41739740297483
+          }
+        },
+        "direction": "Northeast",
+        "surveyDetails": "Survey Number - 402",
+        "surveyLabel": "1"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.1099944991832
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41895164615953
+          }
+        },
+        "direction": "East",
+        "surveyDetails": "Survey Number - 387",
+        "surveyLabel": "2"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.10952428721167
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41747861383767
+          }
+        },
+        "direction": "Southeast",
+        "surveyDetails": "Survey Number - 400",
+        "surveyLabel": "3"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.109670565724006
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41717551947818
+          }
+        },
+        "direction": "West",
+        "surveyDetails": "Survey Number - 401",
+        "surveyLabel": "4"
+      }
+    ],
+    "amenities": {
+      "nearestHighway": {
+        "distance": 5297.4,
+        "label": "D5",
+        "name": "State Highway 78"
+      },
+      "nearestHospital": {
+        "distance": 8736.45,
+        "label": "D3",
+        "name": "Hospital"
+      },
+      "nearestRoadRail": {
+        "distance": 30060.86,
+        "label": "D4",
+        "name": "Pachhapur"
+      },
+      "nearestSchool": {
+        "distance": 2584.71,
+        "label": "D1",
+        "name": "Govt marathi high school kot"
+      },
+      "nearestUniversity": {
+        "distance": 7674.08,
+        "label": "D2",
+        "name": "Sant Gajanan Maharaj Rural Pharmacy College"
+      }
+    },
+    "metadata": {
+      "geometry": {
+        "coordinates": [
+          [
+            [
+              [74.418796346, 16.109758334],
+              [74.418785244, 16.10985649],
+              [74.417842388, 16.109709536],
+              [74.41781521, 16.109784213],
+              [74.417170601, 16.109757512],
+              [74.41594015, 16.109723824],
+              [74.416056296, 16.10946347],
+              [74.417202919, 16.10961935],
+              [74.417783641, 16.109639264],
+              [74.417871419, 16.109577551],
+              [74.418796346, 16.109758334],
+              [74.41781521, 16.109784213]
+            ]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "propEyeId": "ABDH2432",
+      "reportDate": "2022-12-08"
+    },
+    "nearestOffices": [
+      {
+        "label": "C1",
+        "name": "MANAV CHOWK BRANCH",
+        "distance": 12.5
+      },
+      {
+        "label": "C2",
+        "name": "CIRCULAR RODA BRANCH",
+        "distance": 10
+      },
+      {
+        "label": "C3",
+        "name": "NICHOLAS ROAD BRANCH",
+        "distance": 7.6
+      },
+      {
+        "label": "C4",
+        "name": "DEFENCE COLONY BRANCH",
+        "distance": 12
+      },
+      {
+        "label": "C5",
+        "name": "REHAN BABA BRANCH",
+        "distance": 5.5
+      }
+    ],
+    "propertyDetails": {
+      "district": "Kolhapur",
+      "state": "maharashtra",
+      "tehsil": "Gadhinglaj",
+      "village": "Teginhal"
+    },
+    "regionalParameters": {
+      "nearestWaterBody": "1.9",
+      "soilType": "Shallow Black Soils (with medium and deep Black Soils as  inclusion)",
+      "temperature": {
+        "max": 36.9,
+        "min": 14.1
+      }
+    },
+    "surveyNumberDetails": [
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.1098370755399
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41739740297483
+          }
+        },
+        "deviation": 33,
+        "geometry": "{\"type\":\"MultiPolygon\",\"coordinates\":[[[[74.418785244,16.10985649],[74.418767028,16.11001246],[74.418540388,16.109986344],[74.417946918,16.109908536],[74.417209774,16.10982813],[74.417084338,16.109937008],[74.415888233,16.109839879],[74.41594015,16.109723824],[74.417170601,16.109757512],[74.41781521,16.109784213],[74.417842388,16.109709536],[74.418785244,16.10985649]]]]}",
+        "inclusionPercentage": 0.0,
+        "surveyArea": 5892.99,
+        "surveyDetails": "Survey Number - 402",
+        "surveyLabel": "1"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.1099944991832
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41895164615953
+          }
+        },
+        "deviation": 213,
+        "geometry": "{\"type\":\"MultiPolygon\",\"coordinates\":[[[[74.419286116,16.109371259],[74.418994185,16.110828208],[74.418894902,16.110801398],[74.418774218,16.110732269],[74.418684798,16.110711218],[74.418611432,16.110691052],[74.418767028,16.11001246],[74.418785244,16.10985649],[74.418796346,16.109758334],[74.418816177,16.109589391],[74.418859978,16.109149459],[74.419286116,16.109371259]]]]}",
+        "inclusionPercentage": 0.0,
+        "surveyArea": 8819.97,
+        "surveyDetails": "Survey Number - 387",
+        "surveyLabel": "2"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.10952428721167
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41747861383767
+          }
+        },
+        "deviation": 40,
+        "geometry": "{\"type\":\"MultiPolygon\",\"coordinates\":[[[[74.418816177,16.109589391],[74.418796346,16.109758334],[74.417871419,16.109577551],[74.417783641,16.109639264],[74.417202919,16.10961935],[74.416056296,16.10946347],[74.416119859,16.109301512],[74.416964244,16.109426897],[74.417209304,16.109426958],[74.417257886,16.109541314],[74.417801658,16.109500095],[74.417955169,16.109388283],[74.418816177,16.109589391]]]]}",
+        "inclusionPercentage": 0.0,
+        "surveyArea": 6275.86,
+        "surveyDetails": "Survey Number - 400",
+        "surveyLabel": "3"
+      },
+      {
+        "centroid": {
+          "lat": {
+            "label": "N",
+            "value": 16.109670565724006
+          },
+          "lon": {
+            "label": "E",
+            "value": 74.41717551947818
+          }
+        },
+        "deviation": 0,
+        "geometry": "{\"type\":\"MultiPolygon\",\"coordinates\":[[[[74.418796346,16.109758334],[74.418785244,16.10985649],[74.417842388,16.109709536],[74.41781521,16.109784213],[74.417170601,16.109757512],[74.41594015,16.109723824],[74.416056296,16.10946347],[74.417202919,16.10961935],[74.417783641,16.109639264],[74.417871419,16.109577551],[74.418796346,16.109758334]]]]}",
+        "inclusionPercentage": 100.0,
+        "surveyArea": 6430.22,
+        "surveyDetails": "Survey Number - 401",
+        "surveyLabel": "4"
+      }
+    ],
+    "urbanizationLevel": {
+      "airQualityIndex": null,
+      "nightLightIndex": null,
+      "villagePopulation": 564.0
+    },
+    "waterConditions": {
+      "state": [
+        {
+          "district": [
+            {
+              "name": "Kolhapur",
+              "subDistrict": [
+                {
+                  "groundWater": {
+                    "average": 902,
+                    "yearlyData": {
+                      "2012": 860,
+                      "2013": 910,
+                      "2014": 893,
+                      "2015": 853,
+                      "2016": 887,
+                      "2017": 894,
+                      "2018": 911,
+                      "2019": 922,
+                      "2020": 945,
+                      "2021": 947
+                    }
+                  },
+                  "name": "Gadhinglaj",
+                  "rainfall": {
+                    "average": 1116,
+                    "yearlyData": {
+                      "2012": 999,
+                      "2013": 1144,
+                      "2014": 1317,
+                      "2015": 787,
+                      "2016": 818,
+                      "2017": 937,
+                      "2018": 1034,
+                      "2019": 1600,
+                      "2020": 1167,
+                      "2021": 1251
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "maharashtra"
+        }
+      ]
+    }
+  },
+  "status": true
+}

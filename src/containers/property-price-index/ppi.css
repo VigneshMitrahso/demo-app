@@ -1,0 +1,6 @@
+.ppi-sections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px !important;
+  height: calc(100vh - 110px);
+}

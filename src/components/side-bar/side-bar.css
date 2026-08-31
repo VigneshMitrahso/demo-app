@@ -1,0 +1,34 @@
+.side-bar-sec {
+  padding: 10px;
+  background-color: #e77817;
+  height: 100%;
+  transition: all 1.5s ease-in-out;
+}
+.dash-board-sec {
+  display: flex;
+  align-content: center;
+  height: 100%;
+  overflow: hidden !important;
+}
+.side-bar-sec ul {
+  padding: 0px;
+  list-style: none;
+}
+.side-bar-sec ul li {
+  margin-bottom: 30px !important;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1.5s ease-in-out;
+}
+.side-bar-sec ul li label {
+  font-size: 12px;
+  font-weight: bold;
+  /* width: 70px; */
+  /* margin-left: 10px !important; */
+  transition: all 1.5s ease-in-out;
+  text-align: center;
+  color: #000000 !important;
+  text-decoration: none !important;
+}

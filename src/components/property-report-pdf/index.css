@@ -1,0 +1,842 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@font-face {
+  font-family: "SF-Pro-Display-Regular";
+  src: url("../../assets/font/SF-Pro-Text-Regular.ttf") format("woff");
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  background: #ffffff;
+  counter-reset: page;
+  /* margin-top: 100px;  */
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+h1,
+h2,
+p,
+label,
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
+table {
+  border-style: hidden !important;
+  box-shadow: 0 0 0 1px #c4c4c4;
+}
+
+table,
+th,
+td {
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 5px;
+  font-size: var(--main-txt-size-15);
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.border th {
+  border: 1px solid #c4c4c4;
+}
+
+.border td {
+  border: 1px solid #c4c4c4;
+}
+
+.border-right-dashed td {
+  border-right: 1px dashed #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.border-right-dashed td:first-child {
+  border: 1px solid #c4c4c4;
+}
+
+.border-right-dashed th {
+  border-right: 1px dashed #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.border-right-dashed th:first-child {
+  border: 1px solid #c4c4c4;
+}
+
+.border-bottom-dashed td {
+  border-bottom: 1px dashed #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+
+th {
+  padding: 6px 0px;
+  color: var(--main-txt-lite-blue-color);
+  font-family: "sf-pro-text";
+}
+
+td {
+  padding: 8px 11px;
+  color: var(--main-txt-lite-brown-color);
+}
+
+.align-left td:not(:first-child) {
+  text-align: left;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.initial {
+  text-transform: initial;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.displayNone {
+  display: none !important;
+}
+
+.common-title-details {
+  font-weight: 600;
+  font-size: var(--main-txt-size-20);
+  line-height: 28px;
+  padding-bottom: 10px;
+  display: block;
+  color: var(--main-txt-dark-grey-color);
+}
+
+.common-table-title {
+  font-weight: 600;
+  font-size: var(--main-txt-size-15);
+  line-height: 20px;
+  color: var(--main-txt-lite-brown-color);
+  display: block;
+  margin-bottom: 9px;
+}
+
+.common-border {
+  padding: 15px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+}
+
+.common-margin-bottom {
+  margin-bottom: 60px;
+}
+
+.common-bar-chart {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.common-bar-chart #groundwater-trend-water-conditions,
+.common-bar-chart #rainfall-trend-water-conditions {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.width-5 {
+  width: 5%;
+}
+
+.width-7 {
+  width: 7%;
+}
+
+.width-15 {
+  width: 15%;
+}
+
+.width-13 {
+  width: 13%;
+}
+
+.width-17 {
+  width: 17%;
+}
+
+.width-26 {
+  width: 26%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+.blue {
+  color: var(--main-txt-lite-blue-color);
+  font-size: var(--main-txt-size-15);
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "sf-pro-text";
+}
+
+.common-para {
+  font-weight: 400;
+  font-size: var(--main-txt-size-12);
+  line-height: 16px;
+  color: var(--main-txt-lite-brown-color);
+  margin-top: 8px;
+}
+
+.table-para {
+  display: block;
+  text-transform: capitalize;
+  font-size: var(--main-txt-size-12);
+  line-height: 16px;
+  color: var(--main-txt-lite-brown-color);
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.map-cotainer {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.map-cotainer .map {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 5px;
+}
+
+/* .map-cotainer .map .leaflet-control-zoom.leaflet-bar.leaflet-control,
+  .map-cotainer .map .leaflet-bottom.leaflet-left,
+  .map-cotainer .map .leaflet-control-attribution.leaflet-control,
+  .map-cotainer .map .gm-style-cc,
+  .map-cotainer .map .gmnoprint {
+    display: none;
+  } */
+
+.propeye-report-section .propeye-report-header {
+  /* page breaks */
+}
+
+.propeye-report-section .propeye-report-header .content {
+  border-radius: 4px;
+  background-color: var(--main-bg-lite-grey-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 16px;
+  margin: 20px;
+}
+
+.propeye-report-section .propeye-report-header .content .propeye-report-title {
+  font-weight: 700;
+  font-size: var(--main-txt-size-18);
+  font-style: italic;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: var(--main-txt-lite-blue-color);
+}
+
+.blueText {
+  color: var(--main-txt-lite-blue-color);
+  font-size: var(--main-txt-size-15);
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "sf-pro-text";
+}
+
+.propeye-report-section
+  .propeye-report-header
+  .content
+  .propeye-report-details {
+  display: flex;
+  font-weight: 400;
+  font-size: var(--main-txt-size-14);
+  line-height: 20px;
+}
+
+.propeye-report-section
+  .propeye-report-header
+  .content
+  .propeye-report-details
+  .propeye-report-id {
+  margin-right: 15px;
+}
+
+.propeye-report-section
+  .propeye-report-header
+  .content
+  .propeye-report-details
+  label {
+  color: var(--main-txt-dark-grey-color);
+}
+
+.propeye-report-section
+  .propeye-report-header
+  .content
+  .propeye-report-details
+  span {
+  font-weight: 600;
+  color: var(--main-txt-lite-blue-color);
+}
+
+@media print {
+  .propeye-report-section .propeye-report-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.propeye-report-section .propeye-report-warppers {
+  padding: 20px 51px;
+  /* page breaks */
+}
+
+.propeye-report-section .propeye-report-warppers .propeye-report-description {
+  margin-bottom: 40px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .common-border {
+  padding: 15px 0px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .property-details-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 15px 15px;
+  font-size: var(--main-txt-size-15);
+  line-height: 20px;
+  border-bottom: 1px dashed #c4c4c4;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .property-details-title
+  label {
+  color: var(--main-txt-lite-grey-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .property-details-title
+  span {
+  font-weight: 600;
+  color: var(--main-txt-lite-blue-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .property-details-table {
+  padding: 15px 15px 0px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .property-details-table
+  li {
+  font-weight: 500;
+  font-size: var(--main-txt-size-15);
+  line-height: 20px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .property-details-table
+  li:not(:last-child) {
+  padding-bottom: 10px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .property-details-table
+  li
+  span {
+  color: #261e80;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .propeye-report-description
+  .property-details-table
+  li
+  label {
+  color: #828282;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .title
+  .property-category
+  label {
+  font-weight: 600;
+  font-size: var(--main-txt-size-15);
+  line-height: 20px;
+  color: var(--main-txt-dark-grey-color);
+  padding-right: 10px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .title
+  .property-category
+  span {
+  display: none;
+  padding: 3px 10px;
+  border-radius: 2px;
+  color: var(--main-txt-white-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .title
+  .property-category
+  .naActive {
+  display: inline;
+  background-color: var(--main-bg-grey-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .title
+  .property-category
+  .aActive {
+  display: inline;
+  background-color: var(--main-bg-green-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  span,
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  p {
+  display: block;
+  font-weight: 500;
+  font-size: var(--main-txt-size-10);
+  line-height: 16px;
+  color: var(--main-txt-brown-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details {
+  display: flex;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li {
+  display: flex;
+  align-items: center;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li
+  label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li
+  .hdfc-loc-pin {
+  width: 15px;
+  height: 15px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li
+  .hdfc-loc-pin
+  img {
+  width: 100%;
+  height: 100%;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li
+  .red {
+  border: 1px dashed #ff2121;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li
+  .yellow {
+  border: 1px solid #fff500;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li
+  .yellow-bg {
+  background: rgba(255, 247, 58, 0.65);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li
+  .inline-block {
+  margin-left: 10px;
+  display: inline-block;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .percent-inclusion-description
+  .map-list
+  .details
+  .geoAre {
+  display: none;
+}
+
+.propeye-report-section .propeye-report-warppers .adjacent-land-details {
+  /* page breaks */
+}
+
+@media print {
+  .propeye-report-section .propeye-report-warppers .adjacent-land-details {
+    padding-top: 77px;
+    page-break-before: always;
+  }
+}
+
+.propeye-report-section .propeye-report-warppers .hdfc-distance-center {
+  /* page breaks */
+}
+
+@media print {
+  .propeye-report-section .propeye-report-warppers .hdfc-distance-center {
+    padding-top: 77px;
+    page-break-before: always;
+  }
+}
+
+.propeye-report-section .propeye-report-warppers .water-conditions {
+  /* page breaks */
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .chart-heading {
+  font-weight: 500;
+  font-size: var(--main-txt-size-12);
+  line-height: 16px;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: var(--main-txt-lite-brown-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  h2 {
+  font-weight: 600;
+  font-size: var(--main-txt-size-15);
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--main-txt-lite-blue-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul {
+  display: flex;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul
+  li {
+  display: flex;
+  align-items: center;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul
+  li
+  label {
+  width: 8px;
+  height: 8px;
+  margin-right: 4px;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul
+  li
+  .blue {
+  background: #3894ff;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul
+  li
+  .dark-blue {
+  background: #474379;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul
+  li
+  .sky-blue {
+  background: rgba(17, 99, 102, 0.5);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul
+  li
+  .green {
+  background: #006666;
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul
+  li
+  span {
+  font-family: "sf-pro-text";
+  font-weight: 400;
+  font-size: var(--main-txt-size-12);
+  line-height: 16px;
+  color: var(--main-txt-black-color);
+}
+
+.propeye-report-section
+  .propeye-report-warppers
+  .water-conditions
+  .common-chart-text
+  ul
+  li:not(:last-child) {
+  margin-right: 23px;
+}
+
+@media print {
+  .propeye-report-section .propeye-report-warppers .water-conditions {
+    padding-top: 77px;
+    page-break-before: always;
+  }
+}
+
+@media print {
+  .propeye-report-section .propeye-report-warppers {
+    padding: 77px 51px;
+  }
+}
+
+.propeye-report-section .footer {
+  /* page breaks */
+}
+
+.propeye-report-section .footer .propeye-report-footer {
+  display: flex;
+  justify-content: space-between;
+  /* border-top: 1px solid #C4C4C4; */
+  padding: 8px 15px;
+}
+
+.propeye-report-section .footer .propeye-report-footer li {
+  flex-basis: 33%;
+}
+
+.propeye-report-section .footer .propeye-report-footer li .hdfc-logo {
+  width: 65px;
+  height: 22px;
+}
+
+.propeye-report-section .footer .propeye-report-footer li .satsure-logo {
+  width: 65px;
+}
+
+.propeye-report-section .footer .propeye-report-footer li img {
+  width: 100%;
+  height: 100%;
+}
+
+.propeye-report-section .footer .propeye-report-footer li .powered-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.propeye-report-section
+  .footer
+  .propeye-report-footer
+  li
+  .powered-section
+  .powered-by {
+  font-size: var(--main-txt-size-6);
+  letter-spacing: 0.1px;
+  color: var(--main-txt-blue-color);
+  margin-right: 7px;
+}
+
+@media print {
+  .propeye-report-section .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+.container-report {
+  margin-top: 5.5rem !important;
+}
+
+.property-map {
+  height: 350px !important;
+  width: 92% !important;
+}
+
+.property-map-new {
+  height: 500px !important;
+  width: calc(100vw - 75vw) !important;
+}
+
+.page-break {
+  page-break-before: always !important;
+  page-break-inside: avoid;
+}
+
+.container-report-pdf {
+  margin-top: 5.5rem !important;
+}
+
+.layout-horizontal {
+  display: flex;
+  flex: 1;
+}
+
+.flex-quater {
+  flex: 0.25;
+}
+
+.flex-half {
+  flex: 0.5;
+}
+
+.leaflet-bar a,
+.leaflet-bar a:hover {
+  text-decoration: none !important;
+}

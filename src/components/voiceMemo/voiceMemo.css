@@ -1,0 +1,68 @@
+.site-vist {
+  background-color: #053c6d;
+  color: #fff;
+  border-radius: 6px;
+  margin: 13px 0px 20px !important;
+}
+
+.sitrepot h3 {
+  font-size: 12px !important;
+  /* font-weight: bold; */
+  font-family: "poppins";
+}
+
+.sitrepot {
+  font-size: 16px !important;
+  font-weight: bold;
+  background-color: #e77817 !important;
+}
+
+.site-vist h3 {
+  font-size: 10px;
+  padding: 10px;
+  text-align: center;
+  font-family: "poppins";
+}
+
+.marginTop {
+  margin: 20px 0px !important;
+}
+
+.record-list-container {
+  background-color: #00366f;
+  font-family: "poppins";
+  font-size: 15px;
+  color: #fff;
+  border: none !important;
+  border-radius: 6px;
+  margin: 10px 0px 10px 0px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+.record-list-container audio {
+  width: 100%;
+}
+
+.audio-text {
+  text-align: center;
+}
+
+.audio-lister {
+  /* display: flex; */
+}
+
+.audio-record-list {
+  /* display: flex; */
+}
+
+.music-list img {
+  width: 100%;
+  height: 100%;
+}
+
+.music-list {
+  width: 20px;
+  height: 20px;
+}

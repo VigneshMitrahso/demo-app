@@ -1,0 +1,14 @@
+.ppi-filter-section {
+  flex-basis: 25%;
+}
+.ppi-filter-container {
+  background-color: #e77817;
+  border-radius: 16px;
+  border: 2px solid #053c6d;
+  margin: 5px 20px;
+  padding: 10px 20px;
+}
+
+.card-width {
+  width: 394px;
+}

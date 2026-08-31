@@ -1,0 +1,248 @@
+@media screen and (max-width: 500px) {
+  .video-main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100vw;
+  margin: auto;
+  justify-content: center;
+  text-align: center;
+}
+
+.call_list_container {
+  position: absolute;
+  left: 29vw;
+  width: calc(100vw - 58vw);
+  bottom: 0;
+  /* display: flex
+; */
+  justify-content: center;
+  /* margin-bottom: 10px; */
+  /* width: 100%; */
+  z-index: 9;
+}
+
+.call-control-container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  z-index: 1000;
+}
+
+.main-container-connecting {
+  display: flex;
+  padding: 10px;
+  width: 100vw;
+  height: calc(100vh - 51px);
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-button {
+  display: flex;
+  background-color: #053c6d;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50px;
+}
+
+.option-button-red {
+  display: flex;
+  background-color: #ff453a;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  z-index: 1000;
+  border: none;
+}
+
+.option-button-green {
+  display: flex;
+  background-color: #41bb7a;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 100px;
+  z-index: 1000;
+}
+
+.loader-circle {
+  border: 4px solid #fff;
+  border-left: 4px solid #e77817;
+  border-top: 4px solid #e77817;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  animation: spin 1.6s linear infinite;
+  -webkit-animation: spin 1.6s infinite linear;
+}
+
+.message-text {
+  color: #e77817;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+video {
+  object-fit: contain !important;
+}
+
+.remote-video-container-desktop:first-child {
+  margin-top: 78px !important;
+  height: 80% !important;
+}
+
+.local-video-container {
+  position: absolute;
+  bottom: 120px;
+  left: 10px;
+  width: 200px !important;
+  height: 160px !important;
+  padding: 5px;
+  z-index: 1;
+  border-radius: 25px;
+  transition: 0.25;
+  transition-timing-function: ease-out;
+}
+
+.remote-video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 25px;
+  transition: 0.25;
+  transition-timing-function: ease-out;
+}
+
+.remote-video-container-desktop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 30%;
+  margin: auto;
+  height: 90%;
+  padding: 5px;
+  border-radius: 25px;
+  transition: 0.25;
+  transition-timing-function: ease-out;
+}
+
+.user-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.stop-video-container {
+  width: 100%;
+  height: "200px";
+  background-color: #000;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.video-controls-container {
+  display: flex;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.padding3 {
+  padding-left: 25px;
+  padding-right: 30px;
+}
+
+.ring-btn-container {
+  display: flex;
+}
+
+.disconnected {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch-camera {
+  display: flex;
+  background-color: #053c6d;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 100px;
+  border: none;
+  z-index: 1000;
+  margin: 10px;
+}
+
+video {
+  border-radius: 20px;
+}
+
+.custom-Localparticipant {
+position: absolute;
+  left: 3%;
+  bottom: 10%;
+  height: calc(100vh - 80vh);
+  width: calc(100vw - 80w);
+  border-radius: 50px;
+  /* background-color: white; */
+  z-index: 1000;
+  object-fit: cover;
+  overflow: hidden !important;
+}
+
+@media screen and (max-width: 842px) {
+  .custom-Localparticipant {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    height: calc(100vh- 80vh);
+    width: calc(100vw - 60vw);
+    border-radius: 40px;
+    /* background-color: white; */
+    z-index: 1000;
+    object-fit: cover;
+    overflow: hidden !important;
+  }
+}

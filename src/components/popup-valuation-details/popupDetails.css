@@ -1,0 +1,122 @@
+.user-detaile-card {
+  margin-bottom: 10px;
+}
+.user-detaile-card label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px !important;
+}
+.gm-style-iw-d {
+  /* max-height: 420px !important; */
+}
+.user-detaile-card span {
+  font-size: 16px;
+  font-weight: bold;
+}
+.blueBg {
+  background-color: #053c6d;
+  padding: 15px !important;
+  border-radius: 16px !important;
+}
+.redBg {
+  background-color: #97291e;
+  padding: 15px !important;
+  border-radius: 16px !important;
+}
+.skyBlueBg {
+  background-color: #00c0f3;
+  padding: 15px !important;
+  border-radius: 16px !important;
+  color: #000000 !important;
+}
+.purpleBg {
+  background-color: #917bb9;
+  padding: 15px !important;
+  border-radius: 16px !important;
+  color: #fff !important;
+}
+.royalBg {
+  background-color: #4169e1;
+  padding: 15px !important;
+  border-radius: 16px !important;
+  color: #fff !important;
+}
+.pinkBg {
+  background-color: #ff69b4;
+  padding: 15px !important;
+  border-radius: 16px !important;
+  color: #fff !important;
+}
+.greenBg {
+  background-color: #3cb307;
+  padding: 15px !important;
+  border-radius: 16px !important;
+  color: #fff !important;
+}
+.yellowBg {
+  background-color: #e77817;
+  padding: 15px !important;
+  border-radius: 16px !important;
+  color: #000000 !important;
+}
+.otherBg {
+  background-color: #053c6d9e;
+  padding: 15px !important;
+  border-radius: 16px !important;
+  color: #000000 !important;
+}
+.pink-pop {
+  padding: 15px !important;
+  border-radius: 16px !important;
+  background-color: #97291e;
+}
+.purpple-pop {
+  padding: 15px !important;
+  border-radius: 16px !important;
+  background-color: #053c6d;
+}
+.leaflet-popup-content {
+  margin: 0px !important;
+  background: none !important;
+}
+.leaflet-popup-content-wrapper,
+.leaflet-popup-tip {
+  background: none !important;
+}
+.pop-dec table tbody tr td {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 5px;
+  color: #000;
+  border: 1px solid #fff;
+}
+/* .skyBlueBg .pop-dec table tbody tr td {
+  padding: 5px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.purpleBg .pop-dec table tbody tr td {
+  padding: 5px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}
+.yellowBg .pop-dec table tbody tr td {
+  padding: 5px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+} */
+.width100 {
+  width: 240px;
+}
+.width150 {
+  width: 200px;
+}
+.width50 {
+  width: 120px;
+}
+.leaflet-popup-content {
+  width: 400px !important;
+}
+/* .filter-Button .report {
+  z-index: 9999;
+} */

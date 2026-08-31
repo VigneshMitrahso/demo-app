@@ -1,0 +1,94 @@
+.leaflet-right {
+  display: none !important;
+}
+
+.map-page-loader .loader-sec {
+  height: calc(100vh - 105px) !important;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 9999;
+  text-align: center;
+}
+.map-loader .component-loader {
+  height: calc(100vh - 78px);
+  width: 75vw;
+}
+.marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.polygon-icon label {
+  position: absolute;
+  right: -1px;
+  top: -16px;
+  width: 135px;
+  font-size: 12px;
+  text-align: right;
+  padding: 3px;
+  z-index: 9999999;
+  background-color: #fff;
+  border-radius: 8px;
+  display: none;
+}
+.polygon-icon label img {
+  margin-right: 3px;
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+.measure-icon label {
+  position: absolute;
+  right: -1px;
+  top: -16px;
+  width: 135px;
+  font-size: 12px;
+  text-align: right;
+  padding: 3px;
+  z-index: 9999999;
+  background-color: #fff;
+  border-radius: 8px;
+  display: none;
+}
+.measure-icon label img {
+  margin-right: 3px;
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+.polygon-icon:hover label {
+  display: block;
+}
+.measure-icon:hover label {
+  display: block;
+}
+
+.edit-icon label {
+  position: absolute;
+  right: -1px;
+  top: -16px;
+  width: 115px;
+  font-size: 12px;
+  text-align: right;
+  padding: 3px;
+  z-index: 9999999;
+  background-color: #fff;
+  border-radius: 8px;
+  display: none !important;
+}
+.edit-icon label img {
+  margin-right: 3px;
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+}
+.edit-icon:hover label {
+  display: block;
+}

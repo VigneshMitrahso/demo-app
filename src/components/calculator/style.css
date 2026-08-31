@@ -1,0 +1,35 @@
+.calculations-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+}
+
+.pdf_full_page {
+  margin: 50px;
+}
+
+.sticky {
+  position: sticky;
+  z-index: 99;
+  top: 5px;
+}
+
+.output_result {
+  display: flex;
+  justify-content: space-between;
+}
+
+.calculatorHeight {
+  max-height: calc(100vh - 220px) !important;
+  overflow: auto;
+  border: 1px solid gray;
+  border-radius: 5px;
+  margin: 10px;
+}
+
+.phasing-sale{
+  margin-left: 30px;
+    margin-right: 30px;
+    width: 95vw;
+    overflow: scroll;
+}

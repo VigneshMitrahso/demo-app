@@ -1,0 +1,19 @@
+# dependencies
+/node_modules
+
+# production
+/build
+
+# Azure Pipeline
+/cicd
+
+# macOS files
+.DS_Store
+
+# package manager files
+package-lock.json
+
+# misc
+.env
+.vercel
+.env*

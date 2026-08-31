@@ -1,0 +1,103 @@
+image: node:18
+
+pipelines:
+  branches:
+    release:
+      - step:
+          name: Build for Production ENV
+          size: 2x
+          caches:
+            - node
+          script:
+            - export NODE_OPTIONS=--max_old_space_size=6144
+            - yarn install
+            # remove this once the build warnings are fixed
+            - unset CI
+            - yarn run build:prod
+          artifacts:
+            - build/**
+      - step:
+          name: Deploy to Production ENV
+          deployment: production
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.3.8
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_PRODUCTION
+                LOCAL_PATH: $LOCAL_PATH
+            - pipe: atlassian/aws-cloudfront-invalidate:0.6.0
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                DISTRIBUTION_ID: $AWS_CLOUDFRONT_DISTRIBUTION_PRODUCTION
+    master:
+      - step:
+          name: Build for Staging ENV
+          size: 2x
+          caches:
+            - node
+          script:
+            - export NODE_OPTIONS=--max_old_space_size=6144
+            - yarn install
+            # remove this once the build warnings are fixed
+            - unset CI
+            - yarn run build:staging
+          artifacts:
+            - build/**
+      - step:
+          name: Deploy to Staging ENV
+          deployment: staging
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.3.8
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_STAGING
+                LOCAL_PATH: $LOCAL_PATH
+            - pipe: atlassian/aws-cloudfront-invalidate:0.6.0
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                DISTRIBUTION_ID: $AWS_CLOUDFRONT_DISTRIBUTION_STAGING
+
+    development:
+      - step:
+          script:
+            - echo "Mandatory auto-trigger step (required by BitBucket)"
+      - step:
+          name: Build for Development ENV
+          size: 2x
+          caches:
+            - node
+          script:
+            - export NODE_OPTIONS=--max_old_space_size=6144
+            - yarn install
+            # remove this once the build warnings are fixed
+            - unset CI
+            - yarn run build:dev
+          artifacts:
+            - build/**
+          trigger: manual
+      - step:
+          name: Deploy to Development ENV
+          deployment: development
+          script:
+            - pipe: atlassian/aws-s3-deploy:0.3.8
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                S3_BUCKET: $S3_BUCKET_DEV
+                LOCAL_PATH: $LOCAL_PATH
+            - pipe: atlassian/aws-cloudfront-invalidate:0.6.0
+              variables:
+                AWS_ACCESS_KEY_ID: $AWS_ACCESS_KEY_ID
+                AWS_SECRET_ACCESS_KEY: $AWS_SECRET_ACCESS_KEY
+                AWS_DEFAULT_REGION: $AWS_DEFAULT_REGION
+                DISTRIBUTION_ID: $AWS_CLOUDFRONT_DISTRIBUTION_DEV
+          trigger: manual

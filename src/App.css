@@ -1,0 +1,159 @@
+.app-shell {
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    background:
+      linear-gradient(135deg, rgba(20, 184, 166, 0.08), transparent 34%),
+      linear-gradient(315deg, rgba(249, 115, 22, 0.08), transparent 36%),
+      var(--bg);
+  }
+  
+  .app-header {
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid var(--border);
+    background: rgba(255, 255, 255, 0.86);
+    backdrop-filter: blur(12px);
+    z-index: 9999;
+  }
+  
+  .app-header h1 {
+    margin: 0;
+    color: var(--text-strong);
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  
+  .screen {
+    flex: 1;
+    width: min(100%, 1120px);
+    margin: 0 auto;
+    padding: 32px;
+    box-sizing: border-box;
+  }
+  
+  .screen-centered {
+    display: grid;
+    place-items: center;
+  }
+  
+  .room-card {
+    width: min(100%, 420px);
+    display: grid;
+    gap: 16px;
+    padding: 32px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    box-shadow: var(--shadow);
+    box-sizing: border-box;
+  }
+  
+  .room-card label {
+    color: var(--text-strong);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+  }
+  
+  .room-card input {
+    width: 100%;
+    min-height: 46px;
+    padding: 10px 12px;
+    border: 1px solid var(--border-strong);
+    border-radius: 6px;
+    color: var(--text-strong);
+    background: var(--surface);
+    font: inherit;
+    box-sizing: border-box;
+    outline: none;
+  }
+  
+  .room-card input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft);
+  }
+  
+  .room-card button {
+    min-height: 46px;
+    border: 0;
+    border-radius: 6px;
+    color: white;
+    background: var(--accent);
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    transition:
+      background 160ms ease,
+      transform 160ms ease;
+  }
+  
+  .room-card button:hover {
+    background: var(--accent-strong);
+  }
+  
+  .room-card button:active {
+    transform: translateY(1px);
+  }
+  
+  .room-card button:focus-visible {
+    outline: 3px solid var(--accent-soft);
+    outline-offset: 2px;
+  }
+  
+  .videocall-screen {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    padding: 0;
+  }
+  
+  .video-stage {
+    width: 100%;
+    min-height: calc(100svh - 72px);
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 12px;
+    padding: 32px;
+    border: 0;
+    border-radius: 0;
+    background: #111827;
+    color: #f9fafb;
+    box-sizing: border-box;
+  }
+  
+  .video-stage h2 {
+    margin: 0;
+    color: inherit;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+  
+  .video-stage p {
+    margin: 0;
+    color: #cbd5e1;
+  }
+  
+  @media (max-width: 640px) {
+    .app-header {
+      height: 64px;
+    }
+  
+    .screen {
+      padding: 20px;
+    }
+  
+    .room-card {
+      padding: 24px;
+    }
+  
+    .video-stage {
+      min-height: calc(100svh - 64px);
+    }
+  }
+  

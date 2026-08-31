@@ -1,0 +1,79 @@
+.analytics-landing-container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.analytics-content {
+  margin-top: 20px;
+}
+
+.analytics-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.analytics-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  text-decoration: none;
+  color: inherit;
+}
+
+.analytics-card .card-img {
+  padding: 20px;
+  text-align: center;
+  background: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+}
+
+.analytics-card .card-img img {
+  max-width: 100px;
+  height: auto;
+}
+
+.analytics-card .card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.analytics-card .card-text {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+
+/* Inherit swap-chart styles from filter.css */
+.swap-chart {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.swap-chart label {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.swap-chart label:hover {
+  background: #f8f9fa;
+}
+
+.swap-chart label.active-chart {
+  background: #007bff;
+  color: white;
+} 

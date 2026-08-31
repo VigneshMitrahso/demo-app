@@ -1,0 +1,55 @@
+.pathboxContainer {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-self: start;
+}
+
+.pathboxItem {
+  background-color: #f5f5f5;
+  color: #0bafaf;
+  padding: 2px 10px 2px 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid #f5f5f5;
+  border-right: 3px solid #0bafaf;
+  border-top: 1px solid #0bafaf;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 10px 10px 13px -11px rgba(0, 0, 0, 0.75);
+  position: relative;
+}
+.pathboxItem :hover {
+  background-color: #0bafaf;
+  color: white;
+  padding: 2px 10px 2px 10px;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 10px 10px 13px -11px rgba(0, 0, 0, 0.75);
+}
+.disabledPathboxItem {
+  background-color: #f5f5f5e5;
+  color: black;
+  padding: 2px 10px 2px 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: 1px solid black;
+  border-right: 3px solid black;
+  border-top: 1px solid black;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 10px 10px 13px -11px rgba(0, 0, 0, 0.75);
+  position: relative;
+  text-decoration: none;
+}
+
+.path {
+  font-size: 15px;
+  text-decoration: underline;
+}
+.path:hover {
+  cursor: pointer;
+  text-decoration: wavy;
+}
