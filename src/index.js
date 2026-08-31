@@ -6,10 +6,10 @@ import * as serviceWorker from "./serviceWorker";
 
 import { Provider } from "react-redux";
 
-import configureStore from "./configure";
+// import configureStore from "./configure";
 import * as Sentry from "@sentry/react";
 
-const store = configureStore();
+// const store = configureStore();
 
 if (process.env.NODE_ENV !== "development") {
   Sentry.init({
@@ -53,9 +53,9 @@ if (process.env.NODE_ENV !== "development") {
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
+    {/* <Provider store={store}> */}
       <App />
-    </Provider>
+    {/* </Provider> */}
   </React.StrictMode>,
   document.getElementById("root"),
 );
