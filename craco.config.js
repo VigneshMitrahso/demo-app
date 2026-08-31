@@ -1,31 +1,32 @@
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 const { CracoAliasPlugin, configPaths } = require("react-app-rewire-alias");
-const aliasMap = configPaths("./jsconfig.paths.json");
 const path = require("path");
+
+const aliasMap = configPaths("./jsconfig.paths.json");
 
 module.exports = {
   plugins: [
     {
       plugin: CracoAliasPlugin,
-      options: { alias: aliasMap },
+      options: {
+        alias: aliasMap,
+      },
     },
   ],
+
   webpack: {
     configure: (webpackConfig) => {
-      // Set up aliases
       webpackConfig.resolve.alias = {
         ...webpackConfig.resolve.alias,
-        "react/jsx-runtime": require.resolve("react/jsx-runtime.js"),
-      };
 
-      // Set up fallbacks for node modules - using false to disable them
-      webpackConfig.resolve.fallback = {
-        ...webpackConfig.resolve.fallback,
-        fs: false,
-        child_process: false,
-        net: false,
-        tls: false,
-        dns: false,
+        "console-browserify": path.resolve(
+          __dirname,
+          "src/libs/console-browserify"
+        ),
+
+        // fs: require.resolve("node-libs-browser/mock/empty"),
+        // child_process: require.resolve("node-libs-browser/mock/empty"),
+        // net: require.resolve("node-libs-browser/mock/empty"),
       };
 
       // Add resolve extensions
@@ -35,7 +36,7 @@ module.exports = {
         ".mjs",
       ];
 
-      // Add source-map-loader rule
+      // Source map loader
       webpackConfig.module.rules.push({
         test: /\.js$/,
         enforce: "pre",
@@ -45,13 +46,9 @@ module.exports = {
 
       return webpackConfig;
     },
+
     plugins: {
-      add: [
-        new NodePolyfillPlugin({
-          // Exclude problematic polyfills
-          excludeAliases: [],
-        }),
-      ],
+      add: [new NodePolyfillPlugin()],
     },
   },
 };
