@@ -78,9 +78,15 @@ function Header() {
 
 function HomeScreen({ onEnterRoom }) {
   const [roomId, setRoomId] = useState('')
+  const [error, setError] = useState('')
 
   function handleSubmit(event) {
     event.preventDefault()
+    if (roomId.trim() !== '00000025') {
+      setError('Please enter the valid number')
+      return
+    }
+    setError('')
     onEnterRoom(roomId.trim())
 
   }
@@ -95,11 +101,15 @@ function HomeScreen({ onEnterRoom }) {
           type="text"
           placeholder="Room ID"
           value={roomId}
-          onChange={(event) => setRoomId(event.target.value)}
+          onChange={(event) => {
+            setRoomId(event.target.value)
+            if (error) setError('')
+          }}
           pattern="[A-Za-z0-9]{1,20}"
           required
           title="Please enter a code." 
         />
+        {error && <div style={{ color: 'red', marginTop: '5px', fontSize: '14px' }}>{error}</div>}
         <button style={{backgroundColor:'#2A5DA8'}} type="submit">Enter</button>
       </form>
     </main>
